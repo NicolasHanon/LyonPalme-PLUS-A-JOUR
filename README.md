@@ -268,7 +268,3 @@ Réalisation des migrations pour le fichier **models.py**
 Finalisation avec la création des dossiers **static** et **templates**.
 
 ## Documentation technique de l'application
-
-## Auteur
-
-- [@nowkh](https://github.com/nowkh)
