@@ -42,7 +42,7 @@ Création de l'environnement python et initilisation du projet avec le framework
    git clone git@gitlab.chassagnes.local:grp_sio2/grp_labo_slam/planning_lyon_palmes.git
    python3 -m venv .env
    source .env/bin/activate
-   pip install django psycopg2 docutils django-encrypted-model-fields Faker
+   pip install django psycopg2 docutils django-encrypted-model-fields Faker reportlab
 ```
 
 Informations concernant les commandes :
@@ -68,6 +68,7 @@ Hors environnement! : `sudo apt install python3-pip`
 | docutils                      | Installation de la documentation auto-générée       |
 | django-encrypted-model-fields | Installation pour chiffrer les données des models   |
 | Faker                         | Installation d'une factory pour générer les données |
+| reportlab                     | Installation pour le rendu au format PDF            |
 
 Création d'un fichier requirements.txt nécessaire pour la réinstallation rapide l'environnement de développement.
 
