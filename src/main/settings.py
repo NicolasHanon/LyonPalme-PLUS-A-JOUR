@@ -137,3 +137,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #Encrypted model key field
 
 FIELD_ENCRYPTION_KEY = os.environ.get('FIELD_ENCRYPTION_KEY', 'WhahYtv4ystFf8Qq3zkQJc25qLtbmvWN5qBWgieSRtM=')
+
+STATIC_URL = "/static/"

@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from planning.views import *
+from django.contrib.staticfiles.storage import staticfiles_storage
+from django.views.generic.base import RedirectView
+from django.conf import settings
 
 urlpatterns = [
     path('admin/doc/', include('django.contrib.admindocs.urls')),
@@ -23,5 +26,9 @@ urlpatterns = [
     path('', indexMain, name="indexMain"),
     path('login/', login_user, name="login_user"),
     path('logout/', logout_user, name="logout_user"),
-    path('planning/', include("planning.urls"))
+    path('planning/', include("planning.urls")),
+    path(
+        "favicon.ico",
+        RedirectView.as_view(url=staticfiles_storage.url("favicon.ico"))
+    )
 ]
