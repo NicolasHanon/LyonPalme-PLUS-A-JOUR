@@ -3,11 +3,12 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="{% static 'main/css/style.css' %}" />
         <link rel="icon"href="{% static 'favicon.ico' %}">
         <title>LyonPalme - Accueil</title>
     </head>
     <body>
-            
+        <h1 class="feur" title="Félicitations! Tu es gay!">Bienvenu à l'écran de titre!</h1>
+        <a href="{% url 'indexApp' %}">Accéder à l'application</a>
     </body>
 </html>

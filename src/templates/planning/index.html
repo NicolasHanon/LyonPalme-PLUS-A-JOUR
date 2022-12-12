@@ -3,11 +3,18 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="{% static 'main/css/style.css' %}" />
         <link rel="icon"href="{% static 'favicon.ico' %}">
         <title>LyonPalme - App</title>
     </head>
     <body>
-            
+        <h1 class="feur" title="Je m'appelle Milan">Félicitations! Vous êtes connecté!</h1>
+        {% if usr.Role == 'Entraineur Resp. Planning' %}
+        <p>{{ usr.Identifiant }} : Vous êtes responsable!</p>
+        {% else %}
+        <p>Vous êtes connecté en tant qu'entraineur!</p>
+        {% endif %}
+        <br>
+        <a href="{% url 'logout_user' %}">Se déconnecter</a>
     </body>
 </html>

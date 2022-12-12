@@ -27,8 +27,4 @@ urlpatterns = [
     path('login/', login_user, name="login_user"),
     path('logout/', logout_user, name="logout_user"),
     path('planning/', include("planning.urls")),
-    path(
-        "favicon.ico",
-        RedirectView.as_view(url=staticfiles_storage.url("favicon.ico"))
-    )
 ]

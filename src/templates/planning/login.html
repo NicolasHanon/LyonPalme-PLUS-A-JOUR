@@ -3,11 +3,31 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="{% static 'main/css/style.css' %}" />
         <link rel="icon"href="{% static 'favicon.ico' %}">
         <title>LyonPalme - Login</title>
     </head>
     <body>
-            
+        <form method="post">
+          {% csrf_token %}
+            <div class="imgcontainer">
+              <img src="img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+          
+            <div class="container">
+              <label for="username"><b>Nom d'utilisateur</b></label>
+              <input type="text" placeholder="Entrez votre user" name="username" id="username" required>
+          
+              <label for="password"><b>Mot de Passe</b></label>
+              <input type="password" placeholder="Entrez vôtre mot de passe" name="password" id="password" required>
+          
+              <button type="submit">Login</button>
+            </div>
+          
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" class="cancelbtn">Annuler</button>
+              <span class="psw"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="Ah le noob!">💀Mot de passe oublié?💀</a></span>
+            </div>
+          </form> 
     </body>
 </html>
