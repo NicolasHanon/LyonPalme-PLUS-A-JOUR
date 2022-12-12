@@ -269,3 +269,37 @@ Réalisation des migrations pour le fichier **models.py**
 Finalisation avec la création des dossiers **static** et **templates**.
 
 ## Documentation technique de l'application
+
+Modélisation de la base de données avec [@drawsql](https://drawsql.app/).
+
+![Screenshot](http://image.noelshack.com/fichiers/2022/49/2/1670314488-screenshot-1.png)
+
+Diagramme de cas d'utilisation.
+
+![Screenshot](http://image.noelshack.com/fichiers/2022/49/2/1670315610-screenshot-1.png)
+
+Installation du projet.
+
+- `git@gitlab.chassagnes.local:grp_sio2/grp_labo_slam/planning_lyon_palmes.git`
+
+- `http://192.168.100.232/grp_sio2/grp_labo_slam/planning_lyon_palmes.git`
+
+`cd planning_lyon_palmes`
+
+`python3 -m venv .env`
+
+`source .env/bin/activate`
+
+`pip install -r requirements.txt`
+
+`python3 src/manage.py makemigrations`
+
+`python3 src/manage.py migrate`
+
+`python3 src/manage.py runserver`
+
+Connexion à l'utilisateur pour la phase de développement : 
+
+- Username : admin
+
+- Password : admin
