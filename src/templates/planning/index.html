@@ -11,6 +11,7 @@
         <h1 class="feur" title="Je m'appelle Milan">Félicitations! Vous êtes connecté!</h1>
         {% if usr.Role == 'Entraineur Resp. Planning' %}
         <p>{{ usr.Identifiant }} : Vous êtes responsable!</p>
+        Accéder au <a href="{% url 'dashboard' %}">Dashboard</a>
         {% else %}
         <p>Vous êtes connecté en tant qu'entraineur!</p>
         {% endif %}
