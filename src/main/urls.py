@@ -19,6 +19,10 @@ from planning.views import *
 from django.contrib.staticfiles.storage import staticfiles_storage
 from django.views.generic.base import RedirectView
 from django.conf import settings
+from django.contrib.auth import views as auth_views
+
+app_name = "main"
+
 
 urlpatterns = [
     path('admin/doc/', include('django.contrib.admindocs.urls')),
@@ -27,4 +31,7 @@ urlpatterns = [
     path('login/', login_user, name="login_user"),
     path('logout/', logout_user, name="logout_user"),
     path('planning/', include("planning.urls")),
+    path('password_reset/done/', auth_views.PasswordResetDoneView.as_view(template_name='main/password/password_reset_done.html'), name='password_reset_done'),
+    path('reset/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(template_name="main/password/password_reset_confirm.html"), name='password_reset_confirm'),
+    path('reset/done/', auth_views.PasswordResetCompleteView.as_view(template_name='main/password/password_reset_complete.html'), name='password_reset_complete'), 
 ]
