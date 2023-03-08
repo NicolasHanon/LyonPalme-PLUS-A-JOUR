@@ -8,7 +8,7 @@ class ENTRAINEMENTForm(ModelForm):
         fields = ['Titre', 'DateEntrainement', 'NomPartie1', 'Partie1', 'TempsPartie1', 'DistancePartie1', 'NomPartie2', 'Partie2', 'TempsPartie2', 'DistancePartie2', 'NomPartie3', 'Partie3', 'TempsPartie3', 'DistancePartie3']
         widgets = {
             'Titre': forms.TextInput(attrs={'class': 'form-control'}),
-            'DateEntrainement': forms.DateInput(attrs={'class': 'form-control'}),
+            'DateEntrainement': forms.DateInput(attrs={'class': 'form-control', 'type': 'date'}),
             'NomPartie1': forms.TextInput(attrs={'class': 'form-control'}),
             'Partie1': forms.Textarea(attrs={'class': 'form-control'}),
             'TempsPartie1': forms.TimeInput(attrs={'class': 'form-control', 'type': 'time'}),

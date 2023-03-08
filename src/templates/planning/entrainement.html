@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="{% static 'planning/css/FormEntrainement.css' %}" />
-        <link rel="icon"href="{% static 'favicon.ico' %}">
+        <link rel="icon" href="{% static 'favicon.ico' %}">
         <title>LyonPalme - {{ entrainement.Titre }}</title>
     </head>
     <body>
@@ -14,7 +14,7 @@
                 {% csrf_token %}
                 {{ form.as_p }}
                 <br>
-                <input class="input" type="submit" name="Modifier" value="Modifier">
+                <input class="submit" type="submit" name="Modifier" value="Modifier">
             </form>
         </div>
     </body>
