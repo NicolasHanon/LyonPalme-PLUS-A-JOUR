@@ -26,9 +26,9 @@ DISABLE_COLLECTSTATIC = 1
 SECRET_KEY = 'django-insecure-g5g9bz74+2kdgtp-2)(c257gt!pqft(-e&yljo-kfb)b#43&3='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
