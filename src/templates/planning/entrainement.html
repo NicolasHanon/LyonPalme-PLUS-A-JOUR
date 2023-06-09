@@ -3,8 +3,8 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="{% static 'main/css/style.css' %}" />
-        <link rel="icon"href="{% static 'favicon.ico' %}">
+        <link rel="stylesheet" href="{% static 'planning/css/FormEntrainement.css' %}" />
+        <link rel="icon" href="{% static 'favicon.ico' %}">
         <title>LyonPalme - {{ entrainement.Titre }}</title>
     </head>
     <body>
@@ -13,7 +13,8 @@
             <form action method="POST">
                 {% csrf_token %}
                 {{ form.as_p }}
-                <input type="submit" name="Modifier" value="Modifier">
+                <br>
+                <input class="submit" type="submit" name="Modifier" value="Modifier">
             </form>
         </div>
     </body>

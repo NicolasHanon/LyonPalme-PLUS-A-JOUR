@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+.form-control {
+    border-radius: 5px 5px 5px 5px;
+}
+
+label{
+    display: block;
+}
+
+.submit{
+    width: 250px;
+    height: 100px;
+    font-size: 250%;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.submit:hover{
+    background-color: #e0e0e091;
+}
