@@ -32,7 +32,7 @@ class ENTRAINEMENT(models.Model):
     """
     Stock les entrainements de la base de donnée
     """
-    Titre = models.CharField(max_length=30, null=False)
+    Titre = models.CharField(max_length=30, null=False) 
     DateEntrainement = models.DateField(null=False)
     NomPartie1 = models.CharField(max_length=30, null=False)
     Partie1 = models.TextField(max_length=254, null=False)

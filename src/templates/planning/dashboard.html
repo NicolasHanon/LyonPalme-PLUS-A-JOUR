@@ -2,20 +2,30 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="{% static 'main/css/style.css' %}" />
+        <link rel="stylesheet" href="{% static 'planning/css/style.css' %}" />
         <link rel="icon"href="{% static 'favicon.ico' %}">
         <title>LyonPalme - Dashboard</title>
     </head>
     <body>
         <h1>Dashboard</h1>
-        <p>
-            <a href="{% url 'create_entrainement' %}"><button>Créer un nouvel entraînement</button></a>
-        </p>
+        <br>
         <div class="entrainement">
-            <form action method="POST">
+            <a href="{% url 'create_entrainement' %}"><button class="btn-createEntrainement">Créer un nouvel entraînement</button></a>
+            <table>
+                <tr class="test">
+                    <th>Titre</th>
+                    <th>Date</th>
+                    <th>Mettre à jour</th>
+                    <th>Supprimer</th>
+                </tr>
                 {% for entrainement in entrainements %}
-                    <p>{{ entrainement.Titre }} <a href="entrainement/{{ entrainement.Titre }}">Modifier</a> <a href="entrainement/delete/{{ entrainement.Titre }}">Supprimer</a></p>
+                <tr>
+                    <th>{{entrainement.Titre}}</th>
+                    <th>{{entrainement.DateEntrainement}}</th>
+                    <th><a href="entrainement/{{ entrainement.Titre }}">Modifier</a></th>
+                    <th><a href="entrainement/delete/{{ entrainement.Titre }}">Supprimer</a></th>
+                </tr>
                 {% endfor %}
-            </form>
+            </table>
         </div>
 </html>
