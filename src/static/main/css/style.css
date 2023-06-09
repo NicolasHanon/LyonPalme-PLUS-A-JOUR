@@ -1,3 +1,73 @@
 .feur{
     cursor: help;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+.form-control {
+    border-radius: 5px 5px 5px 5px;
+}
+
+label{
+    display: block;
+}
+
+.submit{
+    width: 250px;
+    height: 100px;
+    font-size: 250%;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.submit:hover{
+    background-color: #e0e0e091;
+}
+
+/* FormEntrainement.css */
+
+/* Styles pour le conteneur du formulaire */
+.form {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  /* Styles pour les labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Styles pour les champs de texte */
+  input[type="text"],
+  textarea,
+  input[type="date"],
+  input[type="time"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style pour le bouton de soumission */
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Style pour le titre */
+  h1 {
+    text-align: center;
+  }
+  
+  /* Ajoutez d'autres styles CSS selon vos besoins */
